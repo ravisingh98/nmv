@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>National Music Vision</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    nav {
+      background: #111;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav img {
+      height: 60px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 700;
+    }
+    .slider {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+      width: 100vw;
+    }
+    .slides {
+      display: flex;
+      width: 200%;
+      animation: slide 15s infinite;
+    }
+    .slide {
+      flex: 1 0 100vw;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .slide h1 {
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+      font-size: 3em;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(-100vw); }
+      66% { transform: translateX(-200vw); }
+      100% { transform: translateX(0); }
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #e60000;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      background: #1a1a1a;
+      margin: 10px 0;
+      padding: 15px;
+      border-left: 5px solid #e60000;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 30px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <img src="PNG National Music Vision.png" alt="National Music Vision Logo">
+    <div>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="slider">
+    <div class="slides">
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1506157786151-b8491531f063');">
+        <h1>Empowering Artists</h1>
+      </div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d');">
+        <h1>Reach Millions Through Music</h1>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center;">We are a cutting-edge entertainment company offering digital music services, video production, and artist branding with modern media tools. Join the revolution in music and content creation.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Video Production</li>
+      <li>YouTube Channel Management</li>
+      <li>MCN / CMS Integration</li>
+      <li>Music Distribution to OTT Platforms</li>
+      <li>Content ID and Copyright Management</li>
+      <li>Artist Verification & Claiming</li>
+      <li>Google Ads & YouTube Promotion</li>
+      <li>All Types of Social Media Advertisement</li>
+      <li>Reels and Short Video Promotions</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center;">
+      Email: nationalmusicvision@gmail.com<br>
+      Phone: +91 81880 43656<br>
+      Address: Add Fariha Chowk Main Road, Azamgarh, UP (East) 223227
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 National Music Vision. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
